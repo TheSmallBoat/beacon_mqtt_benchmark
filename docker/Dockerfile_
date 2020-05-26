@@ -1,0 +1,12 @@
+FROM golang:1.13.5-alpine3.11 as builder
+WORKDIR /go/src/awesomeProject/beacon/mqtt-benchmark-sn
+COPY . .
+RUN CGO_ENABLED=0 go build -o mqtt-benchmark -a -ldflags '-extldflags "-static"' .
+
+
+FROM alpine:3.11.2
+WORKDIR /
+COPY ./conf/mqtt-benchmark.ini ./conf/
+COPY --from=builder /go/src/awesomeProject/beacon/mqtt-benchmark-sn/mqtt-benchmark .
+
+CMD ["./mqtt-benchmark"]
