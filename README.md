@@ -6,3 +6,6 @@ https://github.com/TheSmallBoat/beacon_docs/tree/master/mqtt_benchmark_sn_report
 
 ## [configuration 2020/01/ for the benchmark report]
 https://github.com/TheSmallBoat/beacon_docs/tree/master/mqtt_benchmark_sn_conf_20_01
+
+## [How to do it]
+Please see the readme.txt
