@@ -12,8 +12,9 @@ temporary command:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 sample report
+[mqtt-benchmark-sn is the name of binary files,maybe changed,please use the correct file name.]
 ~~~~~~~~~~~~~~~~
-Larrys-MacBook-Pro:mqtt-benchmark-sn abechua$ ./mqtt-benchmark-sn run -c ./conf/mqtt-benchmark.ini
+$ ./mqtt-benchmark-sn run -c ./conf/mqtt-benchmark.ini
 INFO[2020-01-06T08:40:51+13:00] Loading configuration information from './conf/mqtt-benchmark.ini'
 INFO[2020-01-06T08:40:51+13:00] Configuration information ...
 [general] => {Debug:false}, [mqtt-topic] => {Topicroot:Benchmark Numofeachlevel:5}, [mqtt-publisher] => {Scheme:tcp Hostname:127.0.0.1 Port:1883 Cleansession:true Qos:0 Pingtimeout:1 Keepalive:60 Username:x Password: Prefixname:PubBenchmark Prefixshort:PB Publisherseachtopic:3 Messageseachpublisher:500}, [mqtt-subscriber] => {Scheme:tcp Hostname:127.0.0.1 Port:1883 Cleansession:true Qos:0 Pingtimeout:1 Keepalive:60 Username:x Password: Prefixname:SubBenchmark Prefixshort:SB Subscribereachtopic:2}
